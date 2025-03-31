@@ -1,0 +1,12 @@
+sqlite3 inventory.db
+CREATE TABLE inventory (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  quantity INTEGER,
+  cost_per_unit REAL,
+  expires DATE
+);
+INSERT INTO inventory (name, quantity, cost_per_unit) VALUES 
+  ('Tomato', 10, 0.5),
+  ('Chicken', 5, 2.0),
+  ('Carrot', 6, 0.4);
